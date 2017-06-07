@@ -1,0 +1,5 @@
+Code128Helper _Code = new Code128Helper();
+            _Code.ValueFont = new Font("宋体", 20);
+            System.Drawing.Bitmap imgTemp = _Code.GetCodeImage("0980021", Code128Helper.Encode.Code128A);
+            imgTemp.Save(System.AppDomain.CurrentDomain.BaseDirectory + "\\" + "BarCode.gif", System.Drawing.Imaging.ImageFormat.Gif);
+            MessageBox.Show("Done");
